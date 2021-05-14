@@ -55,17 +55,20 @@ Feature: NI deductions
   Scenario: 2018/19 above Primary Threshold
     Given that I have a monthly income of £703
     And that the tax year is 2018/19
+    And that the current tax year is 2018/19
     When calculating my ni deductions
     Then I should be liable to pay £0.12 in class 1 national insurance contributions
 
   Scenario: 2018/19 below Upper Earnings Limit
     Given that I have a monthly income of £3863
     And that the tax year is 2018/19
+    And that the current tax year is 2018/19
     When calculating my ni deductions
     Then I should be liable to pay £379.32 in class 1 national insurance contributions
 
   Scenario: 2018/19 above Upper Earnings Limit
     Given that I have a monthly income of £3864
     And that the tax year is 2018/19
+    And that the current tax year is 2018/19
     When calculating my ni deductions
     Then I should be liable to pay £379.34 in class 1 national insurance contributions
