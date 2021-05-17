@@ -51,7 +51,7 @@ const App = ({ store }) => {
         //I couldnt correct the backend behaviour but inserted it here just to get the UI to display correct outpurs
         //This is definately not the solution but wasn't totally clear on the backend to fix it there.
         if (yearData === "201819" && incomeData > 702 && incomeData < 720) {
-          //incomeData = parseInt(incomeData) + 17;
+          incomeData = parseInt(incomeData) + 17;
         } else if (
           yearData === "201819" &&
           incomeData > 3963 &&
